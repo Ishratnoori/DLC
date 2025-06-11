@@ -1,5 +1,7 @@
 # Digital Literacy Course (DLC) Website
 
+[![Deployment Status](https://vercel.com/api/v1/deployments/digital-literacy-course/status)](https://vercel.com/mini-project/digital-literacy-course)
+
 A modern web application designed to help parents and elderly users learn digital tools easily. The website provides interactive tutorials, an AI chatbot assistant, and accessibility features to make digital learning accessible to everyone.
 
 ## Features
