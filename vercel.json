@@ -1,15 +1,18 @@
 {
   "name": "digital-literacy-course",
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "installCommand": "npm install",
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/node",
       "config": {
-        "nodeVersion": "18.x"
+        "nodeVersion": "18.x",
+        "buildCommand": "npm run build",
+        "installCommand": "npm install"
       }
     }
   ],
@@ -18,5 +21,11 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
 } 
